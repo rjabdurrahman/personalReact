@@ -1,0 +1,8 @@
+.c-nav-link a {
+    color: white;
+}
+
+.c-nav-link a:hover {
+    border-bottom: 2px solid white;
+    color: rgba(255, 255, 255, 0.7);
+}
