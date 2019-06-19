@@ -6,3 +6,7 @@
     border-bottom: 2px solid white;
     color: rgba(255, 255, 255, 0.8);
 }
+
+.card-img-top img{
+    padding-top: -10px;
+}

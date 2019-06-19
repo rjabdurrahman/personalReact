@@ -47,40 +47,31 @@ function App() {
       {/* Containers */}
       <div className="container mt-4">
         <div className="card-deck">
-          <div className="card">
+          <div className="card" data-toggle="modal" data-target="#exampleModal">
+            <img className="card-img-top" src="https://img.youtube.com/vi/xOBlcI3NssQ/mqdefault.jpg" alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe title="video1" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </p>
+              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div className="card-footer">
               <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
           <div className="card">
+            <img className="card-img-top" src="https://img.youtube.com/vi/xOBlcI3NssQ/mqdefault.jpg" alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe title="video2" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </p>
+              <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             <div className="card-footer">
               <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
           <div className="card">
+            <img className="card-img-top" src="https://img.youtube.com/vi/xOBlcI3NssQ/mqdefault.jpg" alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe title="video3" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </p>
+              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             </div>
             <div className="card-footer">
               <small className="text-muted">Last updated 3 mins ago</small>
@@ -88,6 +79,25 @@ function App() {
           </div>
         </div>
         {/* Card List End */}
+        {/* Modal */}
+        <div className="modal fade bd-example-modal-lg" id="exampleModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div className="modal-body">Some data Here</div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Modal End */}
       </div>
     </div>
   );
